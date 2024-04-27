@@ -1,0 +1,156 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    background-color: #ffffff;
+    font-size: larger;
+    
+    color: #333;
+    margin:0;
+}
+p{
+    padding: 10px;
+}
+p, li {
+    font-family: "Roboto", sans-serif;
+    font-size: clamp(15px,3vw,20px);
+    /* color: #708090; */
+    color: #444;
+}
+h1{
+    font-size: clamp(50px, 5vw, 80px);
+}
+main{
+    margin-top:60px;
+}
+
+.container{
+    width:97%;
+    margin-inline: auto;
+
+    max-width: 1300px;
+}
+
+.nav a{
+    text-decoration: none;
+    color: #caccb3
+}
+.nav a:hover{
+    color: #7bbc20;
+}
+
+
+header{
+    padding: 15px;
+    background-color: #2a2a2a;
+}
+.nav {
+    text-align: center;
+    font-weight: bold;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.nav li{
+    display: inline-block; /* or use 'inline' */
+    margin-right: 10px;
+}
+
+.product-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+.product-grid a{
+    text-decoration: none;
+    color: #333
+}
+.product-card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 3px;
+}
+.product-card:hover{
+    background-color: #e4e4e4;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+}
+
+.product-info {
+    padding: 15px;
+}
+
+.product-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.product-image-card{
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 3px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.product-image-card img{
+   max-width: 100%;
+   height: auto; 
+}
+
+.product-content{
+    margin-top:25px
+}
+.product-content-data{
+    padding: 5px;
+}
+
+.pagination{
+    background-color: #333;
+    color: #caccb3;
+    padding: 10px;
+    margin-top: 10px
+}
+
+
+.logo-spotlight{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+
+    margin-top:10px;
+    margin-bottom:10px;
+    padding: 10px;
+}
+.logo-spotlight img{
+    width:auto;
+    height: fit-content;
+}
+.card{
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 20px;
+
+   
+   text-align: center; 
+}
+
+.card-blank{
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 20px;
+
+   
+   text-align: center; 
+}
