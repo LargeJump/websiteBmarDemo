@@ -25,55 +25,113 @@
     <title>Britmar | Home</title>
     <link rel="stylesheet" href="/css/style.css">   
     <link rel="icon" type="image/png" href="/assets/favi.svg">
+
 </head>    
 <body>
 
-    <header style="display:flex; align-items:center; gap:20px; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);">
-        <a href="/"><img src="/assets/bp-logo.svg" style="width:auto; height:100% "></a>
-        <ul class="nav">
-            <li><a href="/">Home</a></li>
-            <li><a href="/products">Products</a></li>
-            <li><a href="/about">About</a></li>
-        </ul>
+    <header style="box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);">
+        <nav class="container-m0" style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;">
+            <a href="/" aria-label="Go to home page"><img src="/assets/bp-logo.svg" alt="Britmar Power Logo" style="width:auto; height:100% "></a>
+            <ul class="nav">
+                <li><a href="/">Home</a></li>
+                <li><a href="/products">Products</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         
-<div class="container">
-    <div class="card-blank">
-        <img src="/assets//bp-logo.svg" height="auto" width="55%" alt="">
-        <p>At Britmar Power, we specialize in providing cutting-edge technology solutions that empower innovation. With our expertise and dedication, we strive to drive forward progress and inspire creativity in every endeavor.</p>
-    </div>
 
-    
-    <h2>Products you can trust</h2>    
-
-    <div class="logo-spotlight">
-        <img src="/assets/foxpower-logo.png" alt="">
-    </div>
-    <div class="logo-spotlight">
-        <img src="/assets/kisae-logo.png" alt="">
-    </div>
-    <div class="logo-spotlight">
-        <img src="/assets/super-b-logo.png" alt="">
-    </div>
-    <div class="logo-spotlight">
-        <img src="/assets/wallmax-logo.png" alt="">
-    </div>
-
-    <h2>More Products From Britmar</h2>
-    <div class="card">
-        <div class="card">
-            <img src="/assets/BritmarLogo.png" alt="Britmar Logo">
+    <div class="banner">
+        <div class="container container-sm " style="padding-top:150px; margin-top:0px;">
+            <h1 class="no-margin-top">Batteries, Power Electronics, and Cable Transits</h1>
+            <p class="no-margin-top" style="text-align:center"> 
+                Drive your business forward with <strong>Britmar Power</strong>. 
+                Find Lithium Ion battery technology that works for you. 
+            </p>
         </div>
-        <div class="card">
-            <img src="/assets/VLS_logo.png" alt="Vancouver Life Raft Logo">
+    </div>
+    
+    <div class="container flex-col-2">
+            <img src="/assets//product_images/Nomia210Ah.jpg" width="300px" alt="Lithium iron phosphate Battery">
+            <div class="container-sm box-shadow">
+                <h1>Lithium Batteries</h1>
+                <p>
+                    Super-B batteries are based on <strong>Lithium Iron Phosphate</strong>
+                    Technology (LiFePO4) - the safest lithium ion technology
+                    available today. Bespoke casing and electronics further increase
+                    safety and durability without compromise.
+                </p>
+                <button type="button">Explore</button>
+            </div>
+    </div>
+
+    <div class="container flex-col-2">
+        
+            <img src="/assets//product_images/Delta.webp" width="300px" alt="Power Inverter">
+            <div class="container-sm box-shadow">
+                <h1>Power Electronics</h1>
+                <p>
+                    Inverters | Battery Chargers | Inverter/Charger | AC/DC Converters
+                    | Portable Power Supply Units. Choose from a wide selection of products 
+                    to keep your electonics functioning in any scenario.
+                </p>
+                <button type="button">Explore</button>
+            </div>
+        
+    </div>
+
+    <div class="container flex-col-2">
+        
+            <img src="/assets//product_images/WRS-frame.webp" width="300px" alt="cable and pipe transit">
+            <div class="container-sm box-shadow">
+                <h1>Cable and Pipe Transits</h1>
+                <p>
+                    Combine cable transit modules and frames from Wallmax to seal rooms 
+                    from outside hazards. Prevent damage to electronic devices
+                    with a tight seal that secures against water, dust, fire, 
+                    and enviromental hazards.
+                </p>
+                <button type="button">Explore</button>
+            </div>
+        
+    </div>
+
+    <div class="container">
+    <h1>Products You Can Trust</h1>    
+        <div class="logo-flex">
+            <div class="logo-spotlight">
+                <img src="/assets/foxpower-logo.png" alt="">
+            </div>
+            <div class="logo-spotlight">
+                <img src="/assets/kisae-logo.png" alt="">
+            </div>
+            <div class="logo-spotlight">
+                <img src="/assets/super-b-logo.png" alt="">
+            </div>
+            <div class="logo-spotlight">
+                <img src="/assets/wallmax-logo.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="container"> 
+        <div class="flex-col-2">
+            <img src="/assets/BritmarLogo.png" height="100px" alt="Britmar Logo">
+            <img src="/assets/VLS_logo.png" width="200px" alt="Vancouver Life Raft Logo">
+            <h1>More From Britmar:</h1>
         </div>
     </div>
 </div>
 
     </main>
-    <footer class="container">
-        <p>&copy; Britmar</p>
+    <footer >
+        <div class="container-m0 flex-col-2">
+
+            <p class="text-light">&copy; Britmar Marine LTD.</p>
+            <p class="text-light">tel: +1 (866)401-2288  </p>
+            <p class="text-light">email: info<span>@<span>britmarpower.com  </p>
+        </div>
     </footer>    
 
 </body>

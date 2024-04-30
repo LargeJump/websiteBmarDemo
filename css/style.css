@@ -1,47 +1,121 @@
+.text-light{
+    color: #caccb3;
+}
+.box-shadow{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+    padding: 40px;
+}
+.no-margin-top{
+    margin-top: 0px;
+}
+
+.banner{
+      /* Set the background image */
+  background-image:linear-gradient(0deg, rgba(255,255,255,1) 15%, rgba(255,255,255,0) 100%),url('/assets/tofinoboat.webp');
+  animation: fadeIn 0.7s ease-in-out;
+  /* Set background size and position */
+  background-size:auto; /* or contain, auto, etc. */
+  background-position:center; 
+  background-repeat: no-repeat; 
+
+  height: 600px;
+}
+html{
+    background-color: #222622;
+}
+main{
+    margin:0px;
+}
+button{
+    background-color: #99c31d;
+    width: auto;
+    min-width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    color: #222622;
+    font-weight: 800;
+    border:none;
+    
+}
+button:hover{
+    background-color: #222622;
+    color: #caccb3;
+    cursor: pointer;
+}
+
+
 body {
+    height: 100%;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     background-color: #ffffff;
     font-size: larger;
     
-    color: #333;
+    color: #222622;
     margin:0;
 }
 p{
     padding: 10px;
+
 }
 p, li {
     font-family: "Roboto", sans-serif;
     font-size: clamp(15px,3vw,20px);
-    /* color: #708090; */
     color: #444;
 }
 h1{
-    font-size: clamp(50px, 5vw, 80px);
+    text-align: center;
+    font-size: clamp(35px, 5vw, 40px);
+    color: #222622;
 }
-main{
-    margin-top:60px;
+h2{
+    text-align: center;
+    color: #222622
+}
+
+
+.container-m0{
+    width:97%;
+    margin-inline: auto;
+    max-width: 1300px;
 }
 
 .container{
     width:97%;
     margin-inline: auto;
+    margin-bottom: 200px;
+    margin-top: 100px;
 
     max-width: 1300px;
+}
+.container-sm{
+    max-width: 650px;
+}
+.container-sm img{
+    display: block;
+    margin-inline: auto;
 }
 
 .nav a{
     text-decoration: none;
-    color: #caccb3
+    color: #caccb3;
+    padding:10px;
 }
 .nav a:hover{
-    color: #7bbc20;
+    color:#99c31d;
+    text-decoration: underline;
 }
 
 
 header{
     padding: 15px;
-    background-color: #2a2a2a;
+    background-color: #222622;
+}
+footer{
+    padding: 15px;
+    background-color: #222622;
+
 }
 .nav {
     text-align: center;
@@ -51,7 +125,7 @@ header{
     margin: 0;
 }
 .nav li{
-    display: inline-block; /* or use 'inline' */
+    display: inline-block; 
     margin-right: 10px;
 }
 
@@ -120,17 +194,18 @@ header{
 
 
 .logo-spotlight{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap:50px;
+    /* display: flex; */
+    width: fit-content;
     background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 5px;
 
+    justify-content: center;
+    align-content:center;
+
     margin-top:10px;
     margin-bottom:10px;
-    padding: 10px;
+    padding: 30px;
 }
 .logo-spotlight img{
     width:auto;
@@ -146,6 +221,13 @@ header{
    text-align: center; 
 }
 
+.logo-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap:30px
+}
 .card-blank{
     border-radius: 5px;
     overflow: hidden;
@@ -154,3 +236,26 @@ header{
    
    text-align: center; 
 }
+.flex-col-2{
+    display:flex;
+
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+    align-items: center;
+
+}
+.flex-col-2:nth-child(odd){
+    flex-direction: row-reverse;
+}
+
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
