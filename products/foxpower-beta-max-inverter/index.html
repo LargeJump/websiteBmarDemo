@@ -24,19 +24,28 @@
     <title>BritmarPower | Foxpower Beta Max</title>
     <link rel="stylesheet" href="/css/style.css">   
     <link rel="icon" type="image/png" href="/assets/favi.svg">
-    
+    <script>
+
+    document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById("backButton").addEventListener("click", function(event) {
+            event.preventDefault();
+            window.history.back();
+        });
+    });
+
+</script
+
 
 </head>    
 <body>
-
     <header style="box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);">
-        <nav class="container-m0" style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;">
-            <a href="/" aria-label="Go to home page"><img src="/assets/bp-logo.svg" alt="Britmar Power Logo" style="width:auto; height:100% "></a>
+        <nav class="container-m0 header-flex" style="display:flex;justify-content:space-between;align-items:center;">
+            <a href="/" aria-label="Go to home page"> <div class="placeholder-image"> <img src="/assets/bp-logo.svg" alt="Britmar Power Logo" style="width:auto; height:100% "></div></a>
             <ul class="nav">
-                <li><a href="/">Home</a></li>
-                <li><a href="/products">Products</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/contact">Contact</a></li>
+                <li><a href="/"  >Home</a></li>
+                <li><a href="/products/"  >Products</a></li>
+                <li><a href="/about/"  >About</a></li>
+                <li><a href="/contact/" >Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -44,13 +53,25 @@
         
 <div class="container">
     <div class="product-content">
+        <div class="">
+            <div>
+            <a href="#" id="backButton" ><button>Go Back</button></a>
+            <h1>Foxpower Beta Max Inverter</h1>
+            </div>
+            <div class="box-shadow">
+                <div>
+                    
+                </div>
+            </div>
+        </div>
         <div class="product-image-card">
             <img src=/assets/product_images/foxpower_max.png alt="Wallmax cable transit frame">
         </div>
-        <div class="product-content-data">
-            <a href="../">back</a>
-            <h1>Foxpower Beta Max Inverter</h1>
-            <h2>Information</h2>
+    </div>
+
+
+    <div class="product-content-card">
+        <h2>Information</h2>
 <p>Lithium-ion batteries, commonly known as lithium batteries, are rechargeable power sources widely used in portable electronic devices such as smartphones, laptops, and electric vehicles. They are preferred for their high energy density, allowing them to store more energy in a smaller and lighter package compared to other battery types. Lithium batteries also exhibit low self-discharge rates, meaning they retain their charge when not in use for extended periods. However, they require careful handling and charging to prevent overheating, which can lead to safety hazards such as fires or explosions. Despite these risks, advancements in lithium battery technology continue to drive innovations in the electronics industry, enabling longer battery life, faster charging times, and the proliferation of clean energy solutions.hi this is product</p>
 <h2>Uses</h2>
 <ul>
@@ -65,8 +86,8 @@
 <h2>Technical Data</h2>
 <p><a href="/assets/product_manuals/manual_sample.pdf">Product Manual</a></p>
 
-        </div>
     </div>
+
 </div>
     </main>
     <footer style="padding:0px">

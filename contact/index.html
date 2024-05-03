@@ -21,53 +21,93 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
 
-    <title>Britmar | About</title>
+    <title>Britmar | Contact</title>
     <link rel="stylesheet" href="/css/style.css">   
     <link rel="icon" type="image/png" href="/assets/favi.svg">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 <script src="/javascript/leaflet.js" defer></script>
+<style>
+    input, textarea{
+        width: 100%;
+        font-family: 'Roboto', sans-serif;
+        font-size: large;
+        border-radius:5px;
+        border:1px solid #222622;
+        padding:10px;
+
+    }
+    textarea{
+        min-height:200px;
+    }
+    .form-container{
+        max-width:800px;
+        margin-inline:auto;
+    }
+</style>
 
 
 </head>    
 <body>
-
     <header style="box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);">
-        <nav class="container-m0" style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;">
-            <a href="/" aria-label="Go to home page"><img src="/assets/bp-logo.svg" alt="Britmar Power Logo" style="width:auto; height:100% "></a>
+        <nav class="container-m0 header-flex" style="display:flex;justify-content:space-between;align-items:center;">
+            <a href="/" aria-label="Go to home page"> <div class="placeholder-image"> <img src="/assets/bp-logo.svg" alt="Britmar Power Logo" style="width:auto; height:100% "></div></a>
             <ul class="nav">
-                <li><a href="/">Home</a></li>
-                <li><a href="/products">Products</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/contact">Contact</a></li>
+                <li><a href="/"  >Home</a></li>
+                <li><a href="/products/"  >Products</a></li>
+                <li><a href="/about/"  >About</a></li>
+                <li><a href="/contact/"  style="color:#99c31d;text-decoration:underline"  >Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
         
-<div class="container">
+<div class="container no-margin-bottom">
     <h1> Contact </h1>
-    <p>
-        To connect with a professional, you can reach out via email or phone. 
-        By sending an email, you can provide detailed information and inquiries, 
-        allowing for thoughtful responses and documentation. Alternatively, a phone 
-        call provides real-time interaction, enabling immediate clarification and a 
-        personal touch to the communication process.
-    </p>
+</div>
+<div class="container no-margin-top">
+    <div class="contact-flex box-shadow">
+        <div class="contact-card text-light">
+            <address>
+                <strong>Address</strong>: <br />
+                102 - 2433 Dollarton Hwy<br />
+                North Vancouver, BC V7H 0A1<br />
+            </address>
+            <p></p>
+            <div class="icon-para">
+                <img src="/assets/phone_icon.svg" alt="email icon"> <p style="margin:0px" class="text-green">Toll Free: +1 (866)401-2288</p>
+            </div>
+            <div class="icon-para no-margin">
+                <img src="/assets/phone_icon.svg" alt="email icon"> <p  style="margin:0px" class="text-green">Phone: (604)983-4303</p>
+            </div>
+            <div class="icon-para">
+                <img src="/assets/mail_icon.svg" alt="email icon"> <p  style="margin:0px" class="text-green">info@britmarpower.com</p>
+            </div>
 
-    <div class="card">
-        <h2>Contact Information</h2>
-        <p>888-8888-8888</p>
-        <p>info@blank.com</p>
+        </div>
+        
+        <div id="map"></div>
     </div>
-
 </div>
-<div class="container">
-
-    
-    <div id="map"></div>
+<div class="container  no-margin-top">
+    <div class="form-container box-shadow">
+        <h1>Get In Touch</h1>
+        <form
+            action="https://formspree.io/f/xzbnojbo"
+            method="POST"
+        >
+            <label>
+                <h3><span style="color:red;">*</span>Your Email:</h3>
+                <input type="email" name="email" required>
+            </label>
+            <label>
+                <h3><span style="color:red;">*</span>Message:</h3>
+                <textarea name="message" required></textarea>
+            </label>
+            <button type="submit">Send</button>
+        </form>
+    </div>
 </div>
-
     </main>
     <footer style="padding:0px">
         <div class="container-m0 footer-flex">

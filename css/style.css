@@ -1,5 +1,9 @@
+
 .text-light{
     color: #caccb3;
+}
+.text-green{
+    color: #99c31d;
 }
 .box-shadow{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -33,11 +37,10 @@
 }
 
 .banner{
-      /* Set the background image */
-  background-image:linear-gradient(0deg, rgba(255,255,255,1) 15%, rgba(255,255,255,0) 100%),url('/assets/tofinoboat.webp');
+
+  background-image:linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.6026785714285714) 35%, rgba(0,212,255,0) 100%),url('/assets/tofinoboat.webp');
   animation: fadeIn 0.7s ease-in-out;
-  /* Set background size and position */
-  background-size:auto; /* or contain, auto, etc. */
+  background-size:auto; 
   background-position:center; 
   background-repeat: no-repeat; 
 
@@ -45,7 +48,6 @@
 }
 html{
     background-color: #ffffff;
-    height: 100%;
 }
 main{
     margin:0px;
@@ -144,12 +146,31 @@ footer{
     text-align: center;
     font-weight: bold;
     list-style: none;
-    padding: 0;
+    padding: 0px;
     margin: 0;
 }
 .nav li{
     display: inline-block; 
     margin-right: 10px;
+}
+.nav-pages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-pages a{
+    text-decoration: underline;
+    color: #222622;
+}
+.nav-pages ul{
+    margin:0px;
+    padding: 0px;
+}
+.nav-pages li{
+    display: inline-block;
+    text-decoration: none;
+    padding:0px;
+    padding-inline:10px
 }
 
 .product-grid{
@@ -177,14 +198,15 @@ footer{
     height: 400px;
 }
 .product-card:hover{
-    background-color:#99c31d;
+    box-shadow: rgba(22, 96, 5, 0.519) 0px 0px 16px;
+    color: #99c31d;
 }
 
 .product-card img {
     width: 100%;
     height: 60%;
     
-    object-fit: cover;
+    object-fit:scale-down;
 }
 
 .product-info {
@@ -203,20 +225,58 @@ footer{
     margin-bottom: 5px;
 }
 .product-image-card{
-    background-color: #ffffff;
+    background-color: #fff;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 
-}
 
+}
+.product-content{
+    display: flex;
+    flex-wrap: wrap;
+    gap:5px;
+
+    justify-content: space-around;
+    align-items: center;
+}
+.product-content-card ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    padding: 0px;
+    gap:10px
+
+}
+.product-content-card li{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+    padding:8px;
+}
 .product-image-card img{
-   max-width: 100%;
+   max-width: 500px;
+   min-width: 250px;
+   width: 100%;
    height: auto; 
 }
+.product-content-card{
+    text-align: start;
+    width:70%;
+    margin-inline: auto;
+}
+.product-content-card h1, h2{
+    text-align: start;
+}
 
-.product-content{
-    margin-top:25px
+.contact-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    background-color: #222622;
+    border-radius: 5px;
 }
 
 .pagination{
@@ -245,14 +305,13 @@ footer{
     width:auto;
     height: fit-content;
 }
-.card{
-    background-color: #f0f0f0;
+.contact-card{
+    background-color: #222622;
     border-radius: 5px;
     overflow: hidden;
     padding: 20px;
 
-   
-   text-align: center; 
+    flex-grow: 1;
 }
 
 .logo-flex{
@@ -288,6 +347,10 @@ footer{
     margin-bottom: 0px;
 }
 
+img.britmar-marker{
+    filter: hue-rotate(240deg);
+}
+
 .icon-para{
     display: flex;
 }
@@ -299,11 +362,23 @@ footer{
     align-items: center;
     justify-content: space-between;
 }
-#map { 
-    margin-inline:auto;
-    height:400px;
-    width: 80%;
+.img-grow:hover{
+    transform: scale(1.03);
 }
+
+.placeholder-image {
+  width: auto; 
+  height: 70px; 
+}
+
+#map { 
+    height: 400px;
+    width: 400px;
+
+    border-radius: 5px;
+    flex-grow: 2;
+}
+
 
 @keyframes fadeIn {
     from {
@@ -319,12 +394,23 @@ footer{
         margin-top: 30px;
         margin-bottom: 30px;
     }
+    .header-flex{
+        justify-content: center;
+        flex-direction: column;
+    }
     .footer-flex{
         justify-content:center;
         flex-direction: column;
     }
     .footer-flex p{
         margin:0px
+    }
+    .product-content-card{
+        width:90%
+    }
+    .product-image-card img{
+        height: 300px;
+        width:auto;
     }
 
 }
