@@ -33,7 +33,7 @@
             <a href="/" aria-label="Go to home page"> <div class="placeholder-image"> <img src="/assets/bp-logo.svg" alt="Britmar Power Logo" style="width:auto; height:100% "></div></a>
             <ul class="nav">
                 <li><a href="/"  >Home</a></li>
-                <li><a href="/products/"  >Products</a></li>
+                <li><a href="/products/"  style="color:#99c31d;text-decoration:underline"  >Products</a></li>
                 <li><a href="/about/"  >About</a></li>
                 <li><a href="/contact/" >Contact</a></li>
             </ul>
@@ -41,6 +41,17 @@
     </header>
     <main>
         <div class="container no-margin-bottom">
+    <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+    <script src="/pagefind/pagefind-ui.js"></script>
+    <h3>Search</h3>
+    <div id="search"></div>
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            new PagefindUI({ element: "#search", showSubResults: true });
+        });
+    </script>
+</div>
+<div class="container no-margin-bottom">
     <h1>Lithium Batteries</h1>
     <h3>Filter By Category</h1>
     <nav class="filter-categories">
@@ -89,10 +100,7 @@
 
 
 
-
-
 <div class="container">
-    
     <div class="product-grid"><a href="/products/nomia-12v340ah/">
             <div class="box-shadow product-card">
                 <img src="/assets/product_images/Nomia210Ah.jpg" alt="superB Nomia 12V340AH Energy Battery">
@@ -115,17 +123,22 @@
             </div>
         </a></div>
 </div>
+
 <div class="container no-margin-bottom">
-        <h2>Page</h2>
+    <h2 style="text-align:center">Page</h2>
     <nav class="nav-pages">
-        <a href="/products/lithium-batteries/">back</a>
+        <button>
+            <a href="/products/lithium-batteries/">back</a>
+        </button>
         <ul>
-            <li><a href="/products/lithium-batteries/" >1</a></li>
-            <li><a href="/products/lithium-batteries/1/"  aria-current="page">2</a></li>
+            <li><a href="/products/lithium-batteries/" > <button> 1 </button> </a></li>
+            <li><a href="/products/lithium-batteries/1/"  aria-current="page"> <button> 2 </button> </a></li>
         </ul>
-        <a href="">next</a>
+
+        <button>
+            <a href="">next</a>
+        </button>
     </nav>
-</div>
     </main>
     <footer style="padding:0px">
         <div class="container-m0 footer-flex">

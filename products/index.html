@@ -41,6 +41,17 @@
     </header>
     <main>
         <div class="container no-margin-bottom">
+    <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+    <script src="/pagefind/pagefind-ui.js"></script>
+    <h3>Search</h3>
+    <div id="search"></div>
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            new PagefindUI({ element: "#search", showSubResults: true });
+        });
+    </script>
+</div>
+<div class="container no-margin-bottom">
     <h1>All Products</h1>
     <h3>Filter By Category</h1>
     <nav class="filter-categories">
@@ -89,9 +100,7 @@
 
 
 
-
-
-<div class="container">
+<div class="container no-margin-bottom">
     <div class="product-grid"><a href="/products/andrena-12v2-5ah/">
             <div class="box-shadow product-card">
                 <img loading="lazy" src="/assets/product_images/high_rez/Andrena_12V2.5Ah.jpg" alt="superB power battery">
@@ -264,17 +273,23 @@
             </div>
         </a></div>
 </div>
-<div class="container no-margin-bottom">
-        <h2>Page</h2>
-    <nav class="nav-pages">
-        <a href="">back</a>
-        <ul>
-            <li><a href="/products/"  aria-current="page">1</a></li>
-        </ul>
-        <a href="">next</a>
-    </nav>
-</div>
 
+
+
+<div class="container no-margin-bottom">
+    <h2 style="text-align:center">Page</h2>
+    <nav class="nav-pages">
+        <button>
+            <a href="">back</a>
+        </button>
+        <ul>
+            <li><a href="/products/"  aria-current="page"> <button> 1 </button> </a></li>
+        </ul>
+
+        <button>
+            <a href="">next</a>
+        </button>
+    </nav>
     </main>
     <footer style="padding:0px">
         <div class="container-m0 footer-flex">
