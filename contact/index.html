@@ -49,14 +49,14 @@
 
 </head>    
 <body>
-    <header style="box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);">
+    <header id="top" style="box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);">
         <nav class="container-m0 header-flex" style="display:flex;justify-content:space-between;align-items:center;">
             <a href="/" aria-label="Go to home page"> <div class="placeholder-image"> <img src="/assets/bp-logo.svg" alt="Britmar Power Logo" style="width:auto; height:100% "></div></a>
             <ul class="nav">
                 <li><a href="/"  >Home</a></li>
                 <li><a href="/products/"  >Products</a></li>
                 <li><a href="/about/"  >About</a></li>
-                <li><a href="/contact/" >Contact</a></li>
+                <li><a href="/contact/"  style="color:#99c31d;text-decoration:underline"  >Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -65,8 +65,8 @@
 <div class="container no-margin-bottom">
     <h1> Contact </h1>
 </div>
-<div class="container no-margin-top">
-    <div class="contact-flex box-shadow">
+<div class="container no-margin-top no-margin-bottom">
+    <div class="contact-flex">
         <div class="contact-card text-light">
             <address>
                 <strong>Address</strong>: <br />
@@ -75,21 +75,55 @@
             </address>
             <p></p>
             <div class="icon-para">
-                <img src="/assets/phone_icon.svg" alt="email icon"> <p style="margin:0px" class="text-green">Toll Free: +1 (866)401-2288</p>
+                <img src="/assets/phone_icon.svg" alt="email icon"> <p class="text-green" style="margin:0px">Toll Free: +1 (866)401-2288</p>
             </div>
             <div class="icon-para no-margin">
-                <img src="/assets/phone_icon.svg" alt="email icon"> <p  style="margin:0px" class="text-green">Phone: (604)983-4303</p>
+                <img src="/assets/phone_icon.svg" alt="email icon"> <p class="text-green" style="margin:0px">Phone: (604)983-4303</p>
             </div>
             <div class="icon-para">
-                <img src="/assets/mail_icon.svg" alt="email icon"> <p  style="margin:0px" class="text-green">info@britmarpower.com</p>
+                <img src="/assets/mail_icon.svg" alt="email icon"> <p class="text-green" style="margin:0px">info@britmarpower.com</p>
             </div>
 
         </div>
         
-        <div id="map"></div>
+        <div id="map" class="box-shadow"></div>
     </div>
 </div>
-<div class="container  no-margin-top">
+<div class="container no-margin-top no-margin-bottom">
+    <ul class="contact-people">
+        <li>
+            <h3 class="no-margin-bottom">Tony Crane</h3>
+            <h4 class="no-margin-top">Manager</h4>
+            <div class="icon-para">
+                <img src="/assets/phone_icon_green.svg" alt="email icon">(604) 983-4303 ext.2002<br>
+            </div>
+            <div class="icon-para">
+                <img src="/assets/mail_icon_green.svg" alt="email icon"> tony@britmarpower.com
+            </div>
+        </li>
+        <li>
+            <h3 class="no-margin-bottom">Jerry Makarewicz</h3>
+            <h4 class="no-margin-top">Technical Support</h4>
+            <div class="icon-para">
+                <img src="/assets/phone_icon_green.svg" alt="email icon">(604) 983-4303 ext.2008<br>
+            </div>
+            <div class="icon-para">
+                <img src="/assets/mail_icon_green.svg" alt="email icon"> jerry@britmarpower.com
+            </div>
+        </li>
+        <li>
+            <h3 class="no-margin-bottom">Huxley Witts</h3>
+            <h4 class="no-margin-top">Technical Support</h4>
+            <div class="icon-para">
+                <img src="/assets/phone_icon_green.svg" alt="email icon">(604) 983-4303 ext.2008<br>
+            </div>
+            <div class="icon-para">
+                <img src="/assets/mail_icon_green.svg" alt="email icon"> Huxley@britmar.com
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="container">
     <div class="form-container box-shadow">
         <h1>Get In Touch</h1>
         <form
