@@ -1,10 +1,9 @@
 :root{
     --primary-color: #222622;
     --secondary-color: #99c31d;
+    --secondary-color-dark: #648013;
     --tertiary-color: #caccb3;
 }
-
-
 
 .text-light{
     color: #caccb3;
@@ -16,6 +15,12 @@
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 5px;
     padding: 40px;
+}
+.box-shadow-hover:hover{
+    box-shadow: var(--secondary-color) 0px 0px 8px;
+    scale: 1.01;
+    cursor: pointer;
+    color: var(--secondary-color);
 }
 .box{
     padding:20px
@@ -66,7 +71,7 @@ main{
     margin:0px;
 }
 button{
-    background-color: #99c31d;
+    background-color: var(--secondary-color);
     min-width: 100px;
     height: 40px;
     border-radius: 5px;
@@ -111,6 +116,10 @@ h2{
     text-align: center;
     color: #222622
 }
+a{
+    color: var(--secondary-color);
+    text-decoration: none;
+}
 
 
 .container-m0{
@@ -120,7 +129,7 @@ h2{
 }
 
 .container{
-    width:97%;
+    width:90%;
     margin-inline: auto;
     margin-bottom: 100px;
     margin-top: 100px;
@@ -205,10 +214,6 @@ footer{
     width: 300px;
     height: 400px;
 }
-.product-card:hover{
-    box-shadow: rgba(22, 96, 5, 0.519) 0px 0px 16px;
-    color: #99c31d;
-}
 
 .product-card img {
     width: 100%;
@@ -278,6 +283,10 @@ footer{
     text-align: start;
 }
 
+.products-image{
+    max-height: 200px;
+}
+
 .contact-flex{
     display: flex;
     justify-content: center;
@@ -339,6 +348,10 @@ footer{
     justify-content: center;
     gap:30px
 }
+.logo-flex-start{
+    justify-content: start;
+    align-items: center;
+}
 
 .logo-flex-item{
     animation: 0.3s fadeIn ease-in-out;
@@ -352,6 +365,7 @@ footer{
 .logo-flex-reverse{
     flex-direction: row-reverse;
 }
+
 .card-blank{
     border-radius: 5px;
     overflow: hidden;
@@ -410,8 +424,8 @@ img.britmar-marker{
 }
 
 #map { 
-    height: 400px;
-    width: 400px;
+    height: 200px;
+    width: 200px;
 
     border-radius: 5px;
     flex-grow: 2;
@@ -427,7 +441,11 @@ img.britmar-marker{
     }
   }
 
+
 @media only screen and (max-width: 767px) {
+    h1{
+        text-align: start;
+    }
     .container{
         margin-top: 60px;
         margin-bottom: 30px;
@@ -480,5 +498,21 @@ img.britmar-marker{
         height: 300px;
         width:auto;
     }
-
+    .products-image{
+        max-height: 150px;
+        max-width: 100%;
+        height: auto;
+    }
+    .logo-flex{
+        gap:20px;
+    }
+    .logo-flex-item-limit{
+        min-width: 150px;
+        max-width: 300px;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .products-image{
+        max-height: 100px;
+    }
 }
