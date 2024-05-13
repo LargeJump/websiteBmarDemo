@@ -1,8 +1,9 @@
 :root{
     --primary-color: #222622;
     --secondary-color: #99c31d;
-    --secondary-color-dark: #648013;
-    --tertiary-color: #caccb3;
+    --light-text: #caccb3;
+    --mustard-yellow: #FFD700;
+    --orange: #f16417;
 }
 
 .text-light{
@@ -10,6 +11,12 @@
 }
 .text-green{
     color: #99c31d;
+}
+.text-yellow{
+    color:var(--mustard-yellow)
+}
+.text-orange{
+    color: var(--orange)
 }
 .box-shadow{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -55,17 +62,18 @@
 }
 
 .banner{
-
-  background-image:linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.6026785714285714) 35%, rgba(0,212,255,0) 100%),url('/assets/tofinoboat.webp');
-  animation: fadeIn 0.7s ease-in-out;
-  background-size:auto; 
-  background-position:center; 
-  background-repeat: no-repeat; 
-
-  height: 600px;
+    background-color: var(--primary-color);
+    padding-top:100px;
+    padding-bottom: 80px;
+}
+.title{
+    color: var(--light-text);
+    text-align: start;
+    margin:0px;
+    font-size: clamp(36px,10vw,96px);
 }
 html{
-    background-color: #ffffff;
+    background-color: var(--primary-color);
 }
 main{
     margin:0px;
@@ -79,6 +87,28 @@ button{
     font-weight: 800;
     border:none;
     
+}
+.button-primary{
+    display: inline-block;
+    border: 1px solid var(--secondary-color);
+    background-color: var(--secondary-color);
+    padding:10px;
+    color: var(--primary-color);
+    margin-inline:5px;
+}
+.button-primary:hover{
+    background-color: var(--mustard-yellow);
+    border:1px solid var(--mustard-yellow);
+}
+.button-secondary{
+    display: inline-block;
+    border:1px solid var(--secondary-color);
+    padding:10px;
+}
+.button-secondary:hover{
+    border:1px solid var(--mustard-yellow);
+    background-color: var(--mustard-yellow);
+    color:var(--primary-color)
 }
 button:hover{
     scale: 1.05;
@@ -386,12 +416,7 @@ footer{
 .flex-col-2:nth-child(odd){
     flex-direction: row-reverse;
 }
-.no-margin-top{
-    margin-top: 0px;
-}
-.no-margin-bottom{
-    margin-bottom: 0px;
-}
+
 
 img.britmar-marker{
     filter: hue-rotate(240deg);
@@ -443,6 +468,12 @@ img.britmar-marker{
 
 
 @media only screen and (max-width: 767px) {
+    .banner{
+        padding-top:40px
+    }
+    .title{
+        margin-bottom: 20px;
+    }
     h1{
         text-align: start;
     }
@@ -453,6 +484,7 @@ img.britmar-marker{
     .header-flex{
         justify-content: center;
         flex-direction: column;
+        gap: 15px;
     }
 
     .product-grid{
@@ -515,4 +547,14 @@ img.britmar-marker{
     .products-image{
         max-height: 100px;
     }
+}
+.no-margin-top{
+    margin-top: 0px;
+}
+.no-margin-bottom{
+    margin-bottom: 0px;
+}
+.no-margin-vertical{
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
