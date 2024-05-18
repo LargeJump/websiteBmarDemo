@@ -30,10 +30,14 @@
     color: var(--secondary-color);
 }
 .box{
-    padding:20px
+    padding:20px;
+    background-color: var(--primary-color);
 }
 .mw-400{
     max-width: 400px;
+}
+.h-150{
+    height: 200px;
 }
 
 .filter-categories{
@@ -50,21 +54,21 @@
     font-size: larger;
 }
 
-.disable{
+/* .disable{
     pointer-events: none;
     text-decoration: none;
-}
-.disable-btn{
+} */
+/* .disable-btn{
     font-size: small;
     font-weight: 400;
     background-color: #222622;
     color: #caccb3;
-}
+} */
 
 .banner{
     background-color: var(--primary-color);
-    padding-top:100px;
-    padding-bottom: 80px;
+    padding-top:50px;
+    padding-bottom: 50px;
 }
 .title{
     color: var(--light-text);
@@ -82,12 +86,10 @@ button{
     background-color: var(--secondary-color);
     min-width: 100px;
     height: 40px;
-    border-radius: 5px;
     color: #222622;
-    font-weight: 800;
     border:none;
-    
 }
+
 .button-primary{
     display: inline-block;
     border: 1px solid var(--secondary-color);
@@ -138,7 +140,6 @@ p, li {
     color: #444;
 }
 h1{
-    text-align: center;
     font-size: clamp(35px, 5vw, 40px);
     color: #222622;
 }
@@ -161,8 +162,8 @@ a{
 .container{
     width:90%;
     margin-inline: auto;
-    margin-bottom: 100px;
-    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-top: 50px;
 
     max-width: 1300px;
 
@@ -317,37 +318,55 @@ footer{
     max-height: 200px;
 }
 
-.contact-flex{
+.contact-info {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
-    gap: 10px;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 20px;
+}
+
+.contact-info > * {
+    flex: 1
 }
 
 .contact-people{
     display: flex;
     min-width: 200px;
-    justify-content: start;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 20px;
     list-style-type: none;
     padding-left: 0;
 }
 
-.pagination{
+.contact-people > * {
+    all: unset;
+    flex: 1;
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    padding: 20px;
+    max-width: 50%;
+}
+
+.contact-content {
+    display: flex;
+    gap: 20px;
+}
+
+.contact-content > * {
+    flex: 1
+}
+
+/* .pagination{
     background-color: #333;
     color: #caccb3;
     padding: 10px;
     margin-top: 10px
-}
+} */
 
 
-.logo-spotlight{
+/* .logo-spotlight{ */
     /* display: flex; */
-    width: fit-content;
+    /* width: fit-content;
     background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 5px;
@@ -362,7 +381,7 @@ footer{
 .logo-spotlight img{
     width:auto;
     height: fit-content;
-}
+} */
 .contact-card{
     background-color: #222622;
     border-radius: 5px;
@@ -395,16 +414,22 @@ footer{
 .logo-flex-reverse{
     flex-direction: row-reverse;
 }
+.logo-flex-item-img{
+    flex: 1;
+    max-height: 300px;
+    max-width: 50%px;
+    object-fit: cover;
+}
 
-.card-blank{
+/* .card-blank{
     border-radius: 5px;
     overflow: hidden;
     padding: 20px;
 
    
    text-align: center; 
-}
-.flex-col-2{
+} */
+/* .flex-col-2{
     display:flex;
 
     flex-wrap: wrap;
@@ -412,10 +437,10 @@ footer{
     justify-content: space-around;
     align-items: center;
 
-}
-.flex-col-2:nth-child(odd){
+} */
+/* .flex-col-2:nth-child(odd){
     flex-direction: row-reverse;
-}
+} */
 
 
 img.britmar-marker{
@@ -431,7 +456,7 @@ img.britmar-marker{
     flex-wrap: wrap;
 
     gap:20px;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
 }
 .img-grow:hover{
@@ -448,12 +473,38 @@ img.britmar-marker{
     scale: 1.3;
 }
 
+.logo-flex-item-img{
+    max-width: 45%;
+}
+/* GALLERY  */
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+    justify-content: space-between;
+    margin-inline:auto;
+    width:95%
+}
+.gallery-item{
+    flex:1 0 32%;
+    min-width: 300px;
+}
+.gallery-item-2{
+    flex: 2 0 65%
+}
+.place-center{
+    display: grid;
+    place-items: center;
+    height: 100%;
+}
+.gallery-item img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+/* ---- */
 #map { 
-    height: 200px;
-    width: 200px;
-
     border-radius: 5px;
-    flex-grow: 2;
 }
 
 
@@ -474,17 +525,27 @@ img.britmar-marker{
     .title{
         margin-bottom: 20px;
     }
-    h1{
-        text-align: start;
-    }
     .container{
-        margin-top: 60px;
+        margin-top: 30px;
         margin-bottom: 30px;
     }
     .header-flex{
         justify-content: center;
         flex-direction: column;
         gap: 15px;
+    }
+
+    .contact-content {
+        display: block;
+    }
+
+    .contact-people > *{
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    #map {
+        height: 350px;
     }
 
     .product-grid{
