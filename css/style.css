@@ -5,6 +5,12 @@
     --mustard-yellow: #FFD700;
     --orange: #f16417;
 }
+.banner-image{
+    background-image: url(/assets/rally-car.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
 
 .text-light{
     color: #caccb3;
@@ -19,6 +25,7 @@
     color: var(--orange)
 }
 .box-shadow{
+    background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 5px;
     padding: 40px;
@@ -53,17 +60,6 @@
     font-weight: 400;
     font-size: larger;
 }
-
-/* .disable{
-    pointer-events: none;
-    text-decoration: none;
-} */
-/* .disable-btn{
-    font-size: small;
-    font-weight: 400;
-    background-color: #222622;
-    color: #caccb3;
-} */
 
 .banner{
     background-color: var(--primary-color);
@@ -356,32 +352,6 @@ footer{
     flex: 1
 }
 
-/* .pagination{
-    background-color: #333;
-    color: #caccb3;
-    padding: 10px;
-    margin-top: 10px
-} */
-
-
-/* .logo-spotlight{ */
-    /* display: flex; */
-    /* width: fit-content;
-    background-color: #fff;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-radius: 5px;
-
-    justify-content: center;
-    align-content:center;
-
-    margin-top:10px;
-    margin-bottom:10px;
-    padding: 30px;
-}
-.logo-spotlight img{
-    width:auto;
-    height: fit-content;
-} */
 .contact-card{
     background-color: #222622;
     border-radius: 5px;
@@ -421,28 +391,6 @@ footer{
     object-fit: cover;
 }
 
-/* .card-blank{
-    border-radius: 5px;
-    overflow: hidden;
-    padding: 20px;
-
-   
-   text-align: center; 
-} */
-/* .flex-col-2{
-    display:flex;
-
-    flex-wrap: wrap;
-
-    justify-content: space-around;
-    align-items: center;
-
-} */
-/* .flex-col-2:nth-child(odd){
-    flex-direction: row-reverse;
-} */
-
-
 img.britmar-marker{
     filter: hue-rotate(240deg);
 }
@@ -462,7 +410,6 @@ img.britmar-marker{
 .img-grow:hover{
     transform: scale(1.03);
 }
-
 .placeholder-image {
   width: auto; 
   height: 70px; 
@@ -503,8 +450,14 @@ img.britmar-marker{
     object-fit:cover;
 }
 /* ---- */
+
+.contact-address{
+    min-width: fit-content;
+}
+
 #map { 
     border-radius: 5px;
+    min-height: 300px;
 }
 
 
@@ -522,6 +475,9 @@ img.britmar-marker{
     .banner{
         padding-top:40px
     }
+    .banner-image{
+        background-position: bottom;
+    }
     .title{
         margin-bottom: 20px;
     }
@@ -535,22 +491,18 @@ img.britmar-marker{
         gap: 15px;
     }
 
-    .contact-content {
-        display: block;
-    }
-
     .contact-people > *{
         flex-direction: column;
         max-width: 100%;
     }
 
     #map {
-        height: 350px;
+        height: 300px;
     }
 
     .product-grid{
         display: grid;
-        grid-template-columns: 1fr 1fr; /* Two columns with equal width */
+        grid-template-columns: 1fr 1fr;
         gap: 0px; 
 
         
