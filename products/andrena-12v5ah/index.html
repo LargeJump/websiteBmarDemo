@@ -26,11 +26,11 @@
     <link rel="icon" type="image/png" href="/assets/favi.svg">
     <script>
 document.addEventListener("DOMContentLoaded", function() { document.getElementById("backButton").addEventListener("click", function(event) { event.preventDefault(); window.history.back(); }); });
-</script
+</script>
 
 </head>    
 <body>
-    <header id="top" style="box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);">
+    <header id="top" >
         <nav class="container-m0 header-flex" style="display:flex;justify-content:space-between;align-items:center;">
             <a href="/" aria-label="Go to home page"> <div class="placeholder-image"> <img src="/assets/bp-logo.svg" alt="Britmar Power Logo" style="width:auto; height:100% "></div></a>
             <ul class="nav">
@@ -45,13 +45,18 @@ document.addEventListener("DOMContentLoaded", function() { document.getElementBy
         <link href="/css/product-page.css" rel="stylesheet">
 <script src="/javascript/accordion.js" defer></script>
 
+
 <div class="container" data-pagefind-body>
+
     <div class="product-content-card layout-flex">
         <div class="layout-flex-item">
+            <a href="#" id="backButton" class="button-primary">Back to Products</a>
+            <a href="/contact/" class="button-primary">Contact Us</a>
+
             <div>
-            <h1>Andrena 12V5AH</h1>
+                <h1>Andrena 12V5AH</h1>
             </div>
-            <div class="box-shadow">
+            <div class="">
                 <div>
                     
                         <li>
@@ -78,16 +83,13 @@ document.addEventListener("DOMContentLoaded", function() { document.getElementBy
             </div>
         </div>
         <div class="layout-flex-item">
-            <img src=/assets/product_images/high_rez/Andrena_12V5Ah.jpg alt="SuperB Andrena power battery">
+            <img src=/assets/product_images/high_rez/Andrena_12V5Ah.jpg alt="SuperB Andrena power battery" height="300px">
         </div>
     </div>
 
-
-    <div class="product-content-card box-shadow">
-            <a href="#" id="backButton" class="button-secondary">Back to Products</a>
-            <a href="/contact/" class="button-secondary">Contact Us</a>
+    <div class="product-content-card">
         <h2>About the Product</h2>
-<p>Lightweight, high-performance, safe and reliable lithium power battery, developed for motor ports. Designed in a standard rally casing. Suitable for 12V systems and for use in extreme environments. This battery has been designed to release large bursts of constant energy.</p>
+<p>Lightweight, high-performance, safe and reliable lithium power battery, developed for motor sports. Designed in a standard rally casing. Suitable for 12V systems and for use in extreme environments. This battery has been designed to release large bursts of constant energy.</p>
 <h2>Uses</h2>
 <ul>
 <li>Starter Batteries</li>
@@ -320,15 +322,15 @@ document.addEventListener("DOMContentLoaded", function() { document.getElementBy
                 <h4 class="text-light">Contact</h4>
                 <div class="icon-para">
                     <img src="/assets/phone_icon.svg" alt="phone icon">
-                    <span class="text-light">Toll Free: +1 (866) 401-2288</span>
+                    <a href="tel:+1 (866) 401-2288" class="text-green">Toll Free: (866) 401-2288</a>
                 </div>
                 <div class="icon-para">
                     <img src="/assets/phone_icon.svg" alt="phone icon">
-                    <span class="text-light">Phone: (604) 983-4303</span>
+                    <a href="tel:+1 (604) 983-4303" class="text-green">Phone: (604) 983-4303</a>
                 </div>
                 <div class="icon-para">
                     <img src="/assets/mail_icon.svg" alt="email icon"> 
-                    <span class="text-light">info@<span style="display:none;">antispam</span>britmarpower.com</span>
+                    <a href="mailto:info@britmarpower.com" class="text-green">info@<span style="display:none;">antispam</span>britmarpower.com</a>
                 </div>
             </div>
             <div>

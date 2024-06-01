@@ -26,11 +26,11 @@
     <link rel="icon" type="image/png" href="/assets/favi.svg">
     <script>
 document.addEventListener("DOMContentLoaded", function() { document.getElementById("backButton").addEventListener("click", function(event) { event.preventDefault(); window.history.back(); }); });
-</script
+</script>
 
 </head>    
 <body>
-    <header id="top" style="box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);">
+    <header id="top" >
         <nav class="container-m0 header-flex" style="display:flex;justify-content:space-between;align-items:center;">
             <a href="/" aria-label="Go to home page"> <div class="placeholder-image"> <img src="/assets/bp-logo.svg" alt="Britmar Power Logo" style="width:auto; height:100% "></div></a>
             <ul class="nav">
@@ -45,27 +45,29 @@ document.addEventListener("DOMContentLoaded", function() { document.getElementBy
         <link href="/css/product-page.css" rel="stylesheet">
 <script src="/javascript/accordion.js" defer></script>
 
+
 <div class="container" data-pagefind-body>
+
     <div class="product-content-card layout-flex">
         <div class="layout-flex-item">
+            <a href="#" id="backButton" class="button-primary">Back to Products</a>
+            <a href="/contact/" class="button-primary">Contact Us</a>
+
             <div>
-            <h1>Wallmax Transit Cable Frame</h1>
+                <h1>Wallmax Transit Cable Frame</h1>
             </div>
-            <div class="box-shadow">
+            <div class="">
                 <div>
                     
                 </div>
             </div>
         </div>
         <div class="layout-flex-item">
-            <img src=/assets/product_images/WRS-frame.webp alt="Wallmax cable transit frame">
+            <img src=/assets/product_images/WRS-frame.webp alt="Wallmax cable transit frame" height="300px">
         </div>
     </div>
 
-
-    <div class="product-content-card box-shadow">
-            <a href="#" id="backButton" class="button-secondary">Back to Products</a>
-            <a href="/contact/" class="button-secondary">Contact Us</a>
+    <div class="product-content-card">
         <h2>Information</h2>
 <p>Lithium-ion batteries, commonly known as lithium batteries, are rechargeable power sources widely used in portable electronic devices such as smartphones, laptops, and electric vehicles. They are preferred for their high energy density, allowing them to store more energy in a smaller and lighter package compared to other battery types. Lithium batteries also exhibit low self-discharge rates, meaning they retain their charge when not in use for extended periods. However, they require careful handling and charging to prevent overheating, which can lead to safety hazards such as fires or explosions. Despite these risks, advancements in lithium battery technology continue to drive innovations in the electronics industry, enabling longer battery life, faster charging times, and the proliferation of clean energy solutions.hi this is product</p>
 <h2>Uses</h2>
@@ -101,15 +103,15 @@ document.addEventListener("DOMContentLoaded", function() { document.getElementBy
                 <h4 class="text-light">Contact</h4>
                 <div class="icon-para">
                     <img src="/assets/phone_icon.svg" alt="phone icon">
-                    <span class="text-light">Toll Free: +1 (866) 401-2288</span>
+                    <a href="tel:+1 (866) 401-2288" class="text-green">Toll Free: (866) 401-2288</a>
                 </div>
                 <div class="icon-para">
                     <img src="/assets/phone_icon.svg" alt="phone icon">
-                    <span class="text-light">Phone: (604) 983-4303</span>
+                    <a href="tel:+1 (604) 983-4303" class="text-green">Phone: (604) 983-4303</a>
                 </div>
                 <div class="icon-para">
                     <img src="/assets/mail_icon.svg" alt="email icon"> 
-                    <span class="text-light">info@<span style="display:none;">antispam</span>britmarpower.com</span>
+                    <a href="mailto:info@britmarpower.com" class="text-green">info@<span style="display:none;">antispam</span>britmarpower.com</a>
                 </div>
             </div>
             <div>
