@@ -3,9 +3,8 @@
     --secondary-color: #99c31d;
     --light-text: #caccb3;
     --mustard-yellow: #FFD700;
-    --orange: #f16417;
+    --orange: #EC5800;
 }
-
 .layout-flex{
     display: flex;
     justify-content: space-between;
@@ -31,6 +30,10 @@ table{
     border-collapse: collapse;
     min-width:100%;
 }
+th{
+    text-align: start;
+    color: #4c554c;
+}
 td{
     padding: 5px 10px;
 }
@@ -38,7 +41,7 @@ tr{
     border-bottom: 1px solid rgb(216, 216, 216);
 }
 strong{
-    color: #808080;
+    /* color: rgb(103, 149, 33); */
 }
 
 
@@ -82,8 +85,6 @@ strong{
     border-top: none;
     padding: 10px;
 }
-
-
 /*  */
 @media only screen and (max-width: 767px) {
     .box-shadow{
@@ -100,8 +101,11 @@ strong{
         width:auto;
     }
     .products-image{
-        max-height: 150px;
         max-width: 100%;
+        height: auto;
+    }
+    .layout-flex-item img{
+        width: 100%;
         height: auto;
     }
 

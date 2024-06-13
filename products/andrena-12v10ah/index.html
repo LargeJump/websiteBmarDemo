@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() { document.getElementBy
 <body>
     <header id="top" >
         <nav class="container-m0 header-flex" style="display:flex;justify-content:space-between;align-items:center;">
-            <a href="/" aria-label="Go to home page"> <div class="placeholder-image"> <img src="/assets/bp-logo.svg" alt="Britmar Power Logo" style="width:auto; height:100% "></div></a>
+            <a href="/" aria-label="Go to home page"> <div class="placeholder-image"> <img src="/assets/bp-logo.svg" alt="Britmar Power Logo" height="50"></div></a>
             <ul class="nav">
                 <li><a href="/"  >Home</a></li>
                 <li><a href="/products/"  style="color:#99c31d;text-decoration:underline"  >Products</a></li>
@@ -43,15 +43,16 @@ document.addEventListener("DOMContentLoaded", function() { document.getElementBy
     </header>
     <main>
         <link href="/css/product-page.css" rel="stylesheet">
-<script src="/javascript/accordion.js" defer></script>
 
 
 <div class="container" data-pagefind-body>
 
     <div class="product-content-card layout-flex">
         <div class="layout-flex-item">
-            <a href="#" id="backButton" class="button-primary">Back to Products</a>
-            <a href="/contact/" class="button-primary">Contact Us</a>
+            <div class="btn-flex">
+                <a href="#" id="backButton" class="button-primary">Back to Products</a>
+                <a href="/contact/" class="button-primary">Contact Us</a>
+            </div>
 
             <div>
                 <h1>Andrena 12V10AH</h1>
@@ -83,7 +84,7 @@ document.addEventListener("DOMContentLoaded", function() { document.getElementBy
             </div>
         </div>
         <div class="layout-flex-item">
-            <img src=/assets/product_images/high_rez/Andrena_12V10Ah.jpg alt="superB andrena 10AH power battery" height="300px">
+            <img src=/assets/product_images/high_rez/Andrena_12V10Ah.jpg alt="superB andrena 10AH power battery" height="400">
         </div>
     </div>
 
@@ -100,12 +101,8 @@ document.addEventListener("DOMContentLoaded", function() { document.getElementBy
 <li>Off Road Vehicles</li>
 </ul>
 <h2>Technical Specification</h2>
-<div class="accordion">
-<div class="accordion-item">
-<div class="accordion-header">
-<h3>Electrical</h3>
-</div>
-<div class="accordion-content">
+<details>
+<summary>Electrical </summary>
 <table>
 <thead>
 <tr>
@@ -140,14 +137,9 @@ document.addEventListener("DOMContentLoaded", function() { document.getElementBy
 </tr>
 </tbody>
 </table>
-</div>
-</div>
-</div>
-<div class="accordion-item">
-<div class="accordion-header">
-<h3>Mechanical</h3>
-</div>
-<div class="accordion-content">
+</details>
+<details>
+<summary>Mechanical </summary>
 <table>
 <thead>
 <tr>
@@ -178,13 +170,9 @@ document.addEventListener("DOMContentLoaded", function() { document.getElementBy
 </tr>
 </tbody>
 </table>
-</div>
-</div>
-<div class="accordion-item">
-<div class="accordion-header">
-<h3>Charge and Discharge</h3>
-</div>
-<div class="accordion-content">
+</details>
+<details>
+<summary>Charge and Discharge </summary>
 <table>
 <thead>
 <tr>
@@ -219,13 +207,9 @@ document.addEventListener("DOMContentLoaded", function() { document.getElementBy
 </tr>
 </tbody>
 </table>
-</div>
-</div>
-<div class="accordion-item">
-<div class="accordion-header">
-<h3>Temperature</h3>
-</div>
-<div class="accordion-content">
+</details>
+<details>
+<summary>Temperature  </summary>
 <table>
 <thead>
 <tr>
@@ -248,13 +232,9 @@ document.addEventListener("DOMContentLoaded", function() { document.getElementBy
 </tr>
 </tbody>
 </table>
-</div>
-</div>
-<div class="accordion-item">
-<div class="accordion-header">
-<h3>Compliance</h3>
-</div>
-<div class="accordion-content">
+</details>
+<details>
+<summary>Compliance  </summary>
 <table>
 <thead>
 <tr>
@@ -273,13 +253,9 @@ document.addEventListener("DOMContentLoaded", function() { document.getElementBy
 </tr>
 </tbody>
 </table>
-</div>
-</div>
-<div class="accordion-item">
-<div class="accordion-header">
-<h3>General</h3>
-</div>
-<div class="accordion-content">
+</details>
+<details>
+<summary>General  </summary>
 <table>
 <thead>
 <tr>
@@ -293,13 +269,12 @@ document.addEventListener("DOMContentLoaded", function() { document.getElementBy
 <td style="text-align:right">8718531360037</td>
 </tr>
 <tr>
-<td><strong>Shipping Classification</strong></td>
+<td><strong>Battery Designation</strong></td>
 <td style="text-align:right">4IFpR27/66-4</td>
 </tr>
 </tbody>
 </table>
-</div>
-</div>
+</details>
 <h2>Supporting Documents</h2>
 <p><a href="/assets/product_manuals/manual_sample.pdf">Product Manual</a></p>
 <p><a href="https://www.super-b.com/media/2752/download/Datasheet%20Andrena_12V10Ah_v1.1.pdf?v=1">Andrena Data Sheet</a></p>
