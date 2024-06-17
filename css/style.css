@@ -37,7 +37,7 @@
 }
 
 .banner-image{
-    background-image: url(/assets/rally-car.jpg);
+    background-image: url("/assets/rally-car.jpg");
     background-size: cover;
     background-position: top;
 }
@@ -67,7 +67,6 @@
 }
 .box{
     padding:20px;
-    background: linear-gradient(to right, rgb(32, 36, 32), rgba(0, 0, 0, 0));
 }
 
 .glass-dark{
@@ -99,7 +98,8 @@ img{
     border-radius: 5px;
 }
 html{
-    background-color: var(--primary-color);
+    min-height: 100vh;
+    background-color: white;
 }
 main{
     margin:0px;
@@ -150,7 +150,7 @@ button:hover{
     cursor: pointer;
 }
 body {
-    height: 100%;
+    min-height: 100%;
     width: 100%;
     font-family: "Roboto", sans-serif;
 
@@ -526,7 +526,7 @@ img.britmar-marker{
         min-width: auto;
     }
     .logo-flex-item > img{
-        width: 100px;
+        width: 100%;
         height: auto;
     }
     .gallery-item > img {

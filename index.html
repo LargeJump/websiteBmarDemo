@@ -14,7 +14,7 @@
     <!-- Google tag (gtag.js) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=block" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,7 +30,7 @@
 <body>
     <header id="top" >
         <nav class="container-m0 header-flex" style="display:flex;justify-content:space-between;align-items:center;">
-            <a href="/" aria-label="Go to home page"> <div class="placeholder-image"> <img src="/assets/bp-logo.svg" alt="Britmar Power Logo" height="50"></div></a>
+            <a href="/" aria-label="Go to home page"> <div class="placeholder-image"> <img src="/assets/bp-logo.svg" alt="Britmar Power Logo" height="50" width="157"></div></a>
             <ul class="nav">
                 <li><a href="/"  style="color:#99c31d;text-decoration:underline" >Home</a></li>
                 <li><a href="/products/"  >Products</a></li>
@@ -61,7 +61,7 @@
 <div class="banner">
     
     <h1 class="title text-orange container">
-    <img src="/assets/super-b-logo.svg" width="400" alt="">
+    <img src="/assets/super-b-logo.svg" width="400" height="85" alt="superB logo">
     
     </h1>
     <div class="container">
@@ -95,7 +95,7 @@
             <div class="logo-flex-item">
                 <div class="logo-flex">
                     <div class="icon-center">
-                        <img src="/assets/safety-certificate.svg" width="40" alt="Checkmark and sheild safety">
+                        <img src="/assets/safety-certificate.svg" width="40" height="40" alt="Checkmark and sheild safety">
                         <h2 class="text-light">
                             Safe
                         </h2>
@@ -111,7 +111,7 @@
             <div class="logo-flex-item ">
                 <div class="logo-flex">
                     <div class="icon-center">
-                        <img src="/assets/cycle.svg" width="40" alt="Checkmark and sheild safety">
+                        <img src="/assets/cycle.svg" width="40" height="40" alt="Checkmark and sheild safety">
                         <h2 class="text-light">
                             Efficient
                         </h2>
@@ -128,7 +128,7 @@
             <div class="logo-flex-item">
                 <div class="logo-flex">
                     <div class="icon-center">
-                        <img  src="/assets/cogs.svg" width="50" alt="Checkmark and sheild safety">
+                        <img  src="/assets/cogs.svg" width="50" height="40" alt="Checkmark and sheild safety">
                         <h2 class="text-light">
                             Reliable
                         </h2>
@@ -183,7 +183,11 @@
 
     <div class="container">
     <hr>
-    <img loading="lazy" src="/assets/lemans.jpg" alt="Motorcycle rider on the race track" style="width:100%;height:auto;">
+    <picture >
+        <source loading="lazy" srcset="/assets/lemans-sm.jpg" media="(max-width: 475px)" style="width:100%;height:auto;">
+        <source loading="lazy" srcset="/assets/lemans.webp" style="width:100%;height:auto;">
+        <img loading="lazy" src="/assets/lemans.jpg" alt="Motorcycle rider on the race track" style="width:100%;height:auto;" >
+    </picture>
 </div>
         <h1 class="title container">Products</h1>
     <div class="container">
@@ -204,7 +208,7 @@
             </div>
 
             <div class="logo-flex-item">
-                <img src="/assets//product_images/Nomia210Ah.jpg" width="300px" alt="Super-B Lithium iron phosphate Battery">
+                <img loading="lazy" src="/assets//product_images/Nomia210Ah.jpg" width="300px" alt="Super-B Lithium iron phosphate Battery">
             </div>
 
         </div>
@@ -227,7 +231,7 @@
                 </a>
             </div>
             <div class="logo-flex-item">
-                <img src="/assets//product_images/Delta.webp" width="250px" alt="Foxpower Power Inverter">
+                <img loading="lazy" src="/assets//product_images/Delta.webp" width="250px" alt="Foxpower Power Inverter">
             </div>
         </div>
     </div>
@@ -248,7 +252,7 @@
                 </a>
             </div>
             <div class="logo-flex-item">
-                <img src="/assets//product_images/WRS-frame.webp" width="300px" alt="cable and pipe transit casings by wallmax">
+                <img loading="lazy" src="/assets//product_images/WRS-frame.webp" width="300px" alt="cable and pipe transit casings by wallmax">
             </div>
         </div>
     </div>
